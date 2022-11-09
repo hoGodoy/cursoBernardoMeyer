@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Ht012</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hélton Godoy">
+    <meta name="description" content="Estilo de bordas nos títulos">
+    <meta name="keywords" content="sites, web, desenvolvimento, HTML5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            color: dodgerblue;
+            /*
+            Bordas nos títulos principais
+            */
+            border: solid 1px dodgerblue;
+        }
+        h2 {
+            margin-left: 20px;
+            color: steelblue;
+        }
+        h3 {
+            color: midnightblue;
+        }
+        p {
+            margin-left: 40px;
+            color: dimgray;
+        }
+        span {
+            color: red;
+            font-style: italic;
+        }
+        /*
+            A classe de estilo da tag é especificada
+            ligando o nome da tag a classe por meio de "." (ponto)
+        */
+        span.aviso {
+            font-weight: bold;
+        }
+        /*O que não for especificamente citado vai herdar as configuraç~eos do body*/
+    </style>
+</head>
+<body>
+    <h1>Título 1</h1>.
+    <h2>Subtítulo 1.1</h2>
+    <p>Primeiro parágrafo do <span>subtítulo 1.1</span></p>
+    <p>Segundo parágrafo do <span>subtítulo 1.1</span></p>
+    <p>Terceiro parágrafo do <span>subtítulo 1.1</span></p>
+    <h2>Subtítulo 1.2</h2>
+    <p>Primeiro parágrafo do <span>subtítulo 1.2</span></p>
+    <p>Segundo parágrafo do <span>subtítulo 1.2</span></p>
+    <p>Terceiro parágrafo do <span>subtítulo 1.2</span></p>
+    <h1>Título 2</h1>.
+    <h2>Subtítulo 2.1</h2>
+    <p>As matrículas poderão ser efetivadas a partir de <span class="aviso">09/11/2021</span> com encerramento em <span class="aviso">29/11/2021</span>.</p>
+</body>
+</html>
