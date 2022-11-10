@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Ht015</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hélton Godoy">
+    <meta name="description" content="Segundo nível de DIVs para estilo responsivo. Uso de id em DIVs. Float left e clear">
+    <meta name="keywords" content="sites, web, desenvolvimento, HTML5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div#main {
+            width: 80%;
+        }
+        div#main > div.linha {
+            display: table-row;
+            float: clear;
+        }
+        div#main > div.linha > div.coluna {
+            float: left;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            color: dodgerblue;
+            border: solid 1px dodgerblue;
+            /* - Alinhamento centralizado - */
+            text-align: center;
+        }
+        h2 {
+            color: steelblue;
+            text-align: center;
+        }
+        h3 {
+            color: midnightblue;
+            text-align: center;
+        }
+        p {
+            margin-left: 40px;
+            color: dimgray;
+        }
+        span {
+            color: red;
+            font-style: italic;
+        }
+        /*
+            A classe de estilo da tag é especificada
+            ligando o nome da tag a classe por meio de "." (ponto)
+        */
+        span.aviso {
+            font-weight: bold;
+        }
+        /*O que não for especificamente citado vai herdar as configuraçoes do body*/
+    </style>
+</head>
+<body>
+    <!--Área principal de apresentação-->
+
+    <div id="main">
+        <!--Linha 1 de apresentação-->
+        <div class="linha">
+            <h1>Título 1</h1>.
+        </div>
+        <!--Linha 2 de apresentação-->
+        <div class="linha">
+            <div class="coluna">
+                <h2>Subtítulo 1.1</h2>
+                <p>Primeiro parágrafo do <span>subtítulo 1.1</span></p>
+                <p>Segundo parágrafo do <span>subtítulo 1.1</span></p>
+                <p>Terceiro parágrafo do <span>subtítulo 1.1</span></p>
+            </div>
+            <div class="coluna">
+                <h2>Subtítulo 1.2</h2>
+                <p>Primeiro parágrafo do <span>subtítulo 1.2</span></p>
+                <p>Segundo parágrafo do <span>subtítulo 1.2</span></p>
+                <p>Terceiro parágrafo do <span>subtítulo 1.2</span></p>
+            </div>
+        </div>
+        <!--Linha 3 de apresentação-->
+        <div class="linha">
+            <h1>Título 2</h1>.
+        </div>
+        <!--Linha 4 de apresentação-->
+        <div class="linha">
+            <div class="coluna">
+                <h2>Subtítulo 2.1</h2>
+                <p>As matrículas poderão ser efetivadas a partir de <span class="aviso">09/11/2021</span> com encerramento em <span class="aviso">29/11/2021</span>.</p>
+            </div>
+            <div class="colula">
+                &nbsp;
+            </div>
+        </div>
+        <!--Linha 5 de apresentação-->
+        <div class="linha">
+            <h1>Título 3</h1>
+        </div>
+        <!--Linha 6 de apresentação-->
+        <div class="linha">
+            <div class="coluna">
+                <h2>Subtítulo 3.1</h2>
+                <p>Primeiro parágrafo do <span>subtítulo 3.1</span></p>
+                <p>Segundo parágrafo do <span>subtítulo 3.1</span></p>
+                <p>Terceiro parágrafo do <span>subtítulo 3.1</span></p>
+                <p>Quarto parágrafo do <span>subtítulo 3.1</span></p>
+            </div>
+            <div class="coluna">
+                <h2>Subtítulo 3.2</h2>
+                <p>Primeiro parágrafo do <span>subtítulo 3.2</span></p>
+                <p>Segundo parágrafo do <span>subtítulo 3.2</span></p>
+                <p>Terceiro parágrafo do <span>subtítulo 3.2</span></p>
+            </div>
+            <div class="coluna">
+                <h2>Subtítulo 3.3</h2>
+                <p>Primeiro parágrafo do <span>subtítulo 3.3</span></p>
+                <p>Segundo parágrafo do <span>subtítulo 3.3</span></p>
+                <p>Terceiro parágrafo do <span>subtítulo 3.3</span></p>
+                <p>Quarto parágrafo do <span>subtítulo 3.3</span></p>
+            </div>
+        </div>
+        <!--Final da linha 6 de apresentação-->
+    </div>
+    <!--Final da div #main-->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Ht019</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hélton Godoy">
+    <meta name="description" content="Listas com UL/LI, evento hover">
+    <meta name="keywords" content="sites, web, desenvolvimento, HTML5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img#i01 {z-index: 1; position: absolute;}
+        nav#menu {height: 20px; z-index: 10;position: fixed; float: clear;}
+        nav#menu ul li {
+            cursor: pointer;
+            background-color: skyblue;
+            color: dimgray;
+            border: solid 1px dimgrey;
+            border-radius: 6px;
+            float: left; 
+            font-family: Verdana;
+            list-style: none;
+            margin-left: 8px;
+            padding-left: 8px;
+            padding-right: 8px;
+            text-align: center;
+        }        
+        nav#menu ul li:hover {
+            color: lightskyblue;
+            background-color: dimgray;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <nav id="menu">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </nav>
+        <div id="secao">
+            <img width="1200" id="i01" src="figura.jpg">
+        </div>
+    </div>
+</body>
+</html>
