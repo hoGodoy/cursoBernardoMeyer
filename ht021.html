@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Ht021</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hélton Godoy">
+    <meta name="description" content="Gráfico de barras com CSS">
+    <meta name="keywords" content="sites, web, desenvolvimento, HTML5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img#i01 {z-index: 1; position: absolute;}
+        /*Barras do gráfico*/
+        
+        li#col01 {
+            height: 70px;
+        }
+        li#col02 {
+            height: 20px;
+        }
+        li#col03 {
+            height: 140px;
+        }
+        li#col04 {
+            height: 80px;
+        }
+        li#col05 {
+            height: 55px;
+        }
+        li#col06 {
+            height: 130px;
+        }
+        nav#menu {height: 20px; z-index: 10; position: fixed; float: clear;}
+        nav#graf ul {
+            border: solid opx black;
+            display: flex;
+            position: relative;
+            top: 200px;
+            align-items: flex-end;
+        }
+
+        nav#graf ul li {
+            cursor: pointer;
+            background-color: skyblue;
+            color: dimgray;
+            border: solid 1px dimgray;
+            border-radius: 6px;
+            float: left;
+            font-family: verdana;
+            list-style: none;
+            margin-left: 2px;
+            padding-left: 8px;
+            text-align: center;
+            vertical-align: bottom;
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <nav id="graf">
+            <ul>
+                <li id="col01">&nbsp;</li>
+                <li id="col02">&nbsp;</li>
+                <li id="col03">&nbsp;</li>
+                <li id="col04">&nbsp;</li>
+                <li id="col05">&nbsp;</li>
+                <li id="col06">&nbsp;</li>
+            </ul>
+        </nav>
+        <div id="secao">
+
+        </div>
+    </div>
+</body>
+</html>

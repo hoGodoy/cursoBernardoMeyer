@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Ht024</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hélton Godoy">
+    <meta name="description" content="Página de notícias">
+    <meta name="keywords" content="sites, web, desenvolvimento, HTML5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div.linha {
+            display: table-row;
+            float: clear;
+        }
+
+        div#main > div > ul > li {
+            float: left;
+            display: table-cell;
+            list-style: none;
+        }
+
+        div#main > div > ul > li > img {width: 400px;}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="linha" id="linha1">
+            <ul>
+                <li><img src="img/fig1.jpg">Notícia 1</li>
+                <li><img src="img/fig2.jpg">Notícia 2</li>
+                <li><img src="img/fig3.jpg">Notícia 3</li>
+            </ul>
+        </div>
+    
+        <div class="linha" id="linha2">
+            <ul>
+                <li><img src="img/fig4.jpg">Notícia 4</li>
+                <li><img src="img/fig5.jpg">Notícia 5</li>
+                <li><img src="img/fig6.jpg">Notícia 6</li>
+            </ul>
+        </div>        
+    </div>
+</body>
+</html>
